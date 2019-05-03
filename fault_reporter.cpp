@@ -1,13 +1,29 @@
-// Teensy Fault Reporter
-//
-// Copyright (C) 2019 TACTIF CIE <www.tactif.com> / Bordeaux - France
-// Author Christophe Gimenez <christophe.gimenez@gmail.com>
-// Sources of knowledge :
-// - the definitive guide to arm cortex-m3 and cortex-m4 processors, Joseph Yiu
-// - https://github.com/cvra/arm-cortex-tools/blob/master/fault.c
-// - https://blog.feabhas.com/2013/02/developing-a-generic-hard-fault-handler-for-arm-cortex-m3cortex-m4/
-// - And many others
-//
+/*
+
+    Teensy Fault Reporter
+
+    Copyright (C) 2019 TACTIF CIE <www.tactif.com> / Bordeaux - France
+    Author Christophe Gimenez <christophe.gimenez@gmail.com>
+    Sources of knowledge :
+    - the definitive guide to arm cortex-m3 and cortex-m4 processors, Joseph Yiu
+    - https://github.com/cvra/arm-cortex-tools/blob/master/fault.c
+    - https://blog.feabhas.com/2013/02/developing-a-generic-hard-fault-handler-for-arm-cortex-m3cortex-m4/
+    - And many others
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>
+
+*/
 
 #include <Arduino.h>
 #include "fault_reporter.h"
