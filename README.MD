@@ -47,9 +47,9 @@ REASON    : USAGE FAULT
 PC=0x490 LR=0x4B3 make crash
 ```
 
-The last line is for my own Makefile usage but you can find the offending line by issuing this command (provided that you're located in the directory where the firmware was compiled AND that the arm-none-eabi tools are in your PATH variable)
-
 Then the teensy will wait for a new firmware upload.
+
+The last line is for my own Makefile usage but you can find the offending line by issuing this command (provided that you're located in the directory where the firmware was compiled AND that the arm-none-eabi tools are in your PATH variable)
 
 ```
 arm-none-eabi-addr2line -a -i -p -s -f -C -e firmware.elf 0x490 0x4B3
